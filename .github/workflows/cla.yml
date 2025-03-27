@@ -25,7 +25,7 @@ jobs:
           # This token is required only if you have configured to store the signatures in a remote repository/organization
           # PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
-          path-to-signatures: 'rdkcentral/cla_signatures'
+          #path-to-signatures: 'rdkcentral/cla_signatures'
           path-to-document: 'https://gist.github.com/rdkcmf-jenkins/25114b6581e0c75fc75e730645febe02' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
