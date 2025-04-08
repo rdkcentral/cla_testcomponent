@@ -7,6 +7,6 @@ on:
 
 jobs:
   CLAAssistant:
-    uses: rdkcentral/cla_signatures/.github/workflows/cla.yml@main
+    uses: rdkcentral/cmf-actions/.github/workflows/cla.yml@main
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ASSISTANT }}
