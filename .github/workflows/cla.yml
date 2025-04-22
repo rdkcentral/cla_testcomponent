@@ -1,4 +1,3 @@
-run-name: "CLA-Lite"
 on:
   issue_comment:
     types: [created]
@@ -7,6 +6,7 @@ on:
 
 jobs:
   CLA-Lite:
+    name: "CLA"
     uses: rdkcentral/cmf-actions/.github/workflows/cla.yml@main
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ASSISTANT }}
