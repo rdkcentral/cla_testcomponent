@@ -1,3 +1,4 @@
+run-name: "CLA-Lite"
 on:
   issue_comment:
     types: [created]
