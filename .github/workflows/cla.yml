@@ -1,4 +1,4 @@
-name: "CLA signature check"
+name: "CLA-Lite"
 on:
   issue_comment:
     types: [created]
@@ -6,7 +6,7 @@ on:
     types: [opened,closed,synchronize]
 
 jobs:
-  CLA-Signature-Check:
+  CLA-Lite:
     uses: rdkcentral/cmf-actions/.github/workflows/cla.yml@main
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ASSISTANT }}
