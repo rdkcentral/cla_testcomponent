@@ -11,8 +11,10 @@ concurrency:
 
 jobs:
   testingConcurrency:
-    name: "test"
-    run: |
-      echo "test"
-      sleep 60
-      echo "test finished"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Prerequisites
+        run: |
+          echo "test"
+          sleep 60
+          echo "test finished"
