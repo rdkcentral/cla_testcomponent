@@ -1,4 +1,4 @@
-name: "CLA"
+name: "Concurrency"
 on:
   issue_comment:
     types: [created]
