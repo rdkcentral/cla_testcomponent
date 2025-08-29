@@ -1,0 +1,18 @@
+name: "CLA"
+on:
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [opened,closed,synchronize]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  testingConcurrency:
+    name: "test"
+    run: |
+      echo "test"
+      sleep 60
+      echo "test finished"
